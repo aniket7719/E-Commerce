@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card, Row, Col, Button } from 'react-bootstrap';
+import Knitwear from "../assets/Knitwear.jpg"
 
 const HighlightsSection = () => {
 return (
@@ -27,7 +28,7 @@ Start Quiz
           <Col md={4}>
             <Card className="h-100 border-0 shadow-sm">
               <Card.Img
-                src="/src/assets/Knitwear.jpg"
+                src={Knitwear}
                 alt="Lookbook"
                 className="img-fluid rounded-top"
               />
@@ -39,7 +40,7 @@ Start Quiz
           <Col md={4}>
             <Card className="h-100 border-0 shadow-sm">
               <Card.Img
-                src="/src/assets/Knitwear.jpg"
+                src={Knitwear}
                 alt="Knitwear"
                 className="img-fluid rounded-top"
               />
@@ -51,7 +52,7 @@ Start Quiz
           <Col md={4}>
             <Card className="h-100 border-0 shadow-sm">
               <Card.Img
-                src="/src/assets/Knitwear.jpg"
+                src={Knitwear}
                 alt="Shoes"
                 className="img-fluid rounded-top"
               />
