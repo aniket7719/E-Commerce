@@ -4,10 +4,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.js"; // Required
 
 const Navbar = () => {
-  useEffect(() => {
-    // Bootstrap needs this if hydration issues exist
-    import("bootstrap/dist/js/bootstrap.bundle.min.js");
-  }, []);
 
   return (
     <>
