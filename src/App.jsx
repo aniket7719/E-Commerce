@@ -1,6 +1,8 @@
 import React from 'react';
 import "./index.css";
 import ErrorBoundary from './components/ErrorBoundary';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.js"; 
 
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
