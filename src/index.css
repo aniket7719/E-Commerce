@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+:root {
+  --hero-pink: #d983a6;
+  --hero-lavender: #b47db8;
+  --hero-teal: #5fd2c6;
+  --hero-gray: #6c7a89;
+  --hero-white: #ffffff;
+}
+
+.hero-bg {
+  background-color: var(--hero-white);
+}
