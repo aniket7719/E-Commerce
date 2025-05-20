@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import logo from "../assets/logo.webp";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle.min.js"; // Required
+import "bootstrap/dist/js/bootstrap.bundle.js"; // Required
 
 const Navbar = () => {
   useEffect(() => {
