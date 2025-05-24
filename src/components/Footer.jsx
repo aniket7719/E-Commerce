@@ -1,13 +1,12 @@
 import React from 'react';
 import './Footer.css';
-import logo from '../assets/footer-logo.png';
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-grid">
         <div className="footer-logo">
-          <img src={logo} alt="Male Fashion" className="logo" />
+          <img src="/assets/footer-logo.png" alt="Male Fashion" className="logo" />
           <p>Style redefined for the modern man. Stay confident. Stay fashionable.</p>
         </div>
 

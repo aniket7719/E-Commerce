@@ -1,0 +1,64 @@
+/* Carousel wrapper */
+.product-carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 0.5rem;
+
+  /* Hide scrollbar */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.product-carousel::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+/* Each item in the horizontal scroll */
+.product-carousel-item {
+  min-width: 260px;
+  flex: 0 0 auto;
+  margin-right: 1rem;
+}
+
+/* Card styling */
+.product-card {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.product-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Product image */
+.product-image {
+  height: 320px;
+  object-fit: cover;
+  width: 100%;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+/* Section heading */
+.product-grid-section h2 {
+  color: #1e2a38;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Carousel indicators (dots) */
+.carousel-indicator-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #c4c4c4;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-indicator-dot.active {
+  background-color: #1e2a38;
+}

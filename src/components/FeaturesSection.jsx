@@ -1,6 +1,6 @@
 import React from 'react';
 import { Row, Col, Button, Form } from 'react-bootstrap';
-import Rich from "../assets/Richman-Size-Guide.jpg"
+// import Rich from "../assets/Richman-Size-Guide.jpg"
 
 const FeaturesSection = () => {
 return (
@@ -12,11 +12,12 @@ return (
 <h5 className="mb-3 fw-semibold">Size Guide</h5>
 <div className="d-flex justify-content-center justify-content-md-start">
 <img
-src={Rich}
-alt="Size Guide"
-className="img-fluid rounded shadow-sm"
-style={{ maxWidth: '200px', height: 'auto' }}
+  src="/assets/Richman-Size-Guide.jpg"
+  alt="Size Guide"
+  className="img-fluid rounded shadow-sm"
+  style={{ maxWidth: '200px', height: 'auto' }}
 />
+
 </div>
 <p className="mt-3 text-muted">
 Ensure the perfect fit for your style with our easy size guide.

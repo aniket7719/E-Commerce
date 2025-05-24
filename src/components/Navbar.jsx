@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import logo from '../assets/logo.webp'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,7 +7,13 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
       <div className="container">
         <a className="navbar-brand" href="#">
-          <img src={logo} alt="Male Fashion" height="40" width="200px" className="me-2" />
+          <img
+            src="/assets/logo.webp"
+            alt="Male Fashion"
+            height="40"
+            width="200"
+            className="me-2"
+          />
         </a>
 
         <button
@@ -19,19 +24,30 @@ const Navbar = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div className={`collapse navbar-collapse ${isOpen ? "show" : ""}`} id="navbarNav">
-          <ul className="navbar-nav gap-3 text-center text-lg-start">
+        <div
+          className={`collapse navbar-collapse ${isOpen ? "show" : ""}`}
+          id="navbarNav"
+        >
+          <ul className="navbar-nav gap-3 text-center text-lg-start ms-auto">
             <li className="nav-item">
-              <a className="nav-link fw-semibold text-dark" href="#">Home</a>
+              <a className="nav-link fw-semibold text-dark" href="#">
+                Home
+              </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link fw-semibold text-dark" href="#">Shop</a>
+              <a className="nav-link fw-semibold text-dark" href="#">
+                Shop
+              </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link fw-semibold text-dark" href="#">Blog</a>
+              <a className="nav-link fw-semibold text-dark" href="#">
+                Blog
+              </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link fw-semibold text-dark" href="#">Contact</a>
+              <a className="nav-link fw-semibold text-dark" href="#contact">
+                Contact
+              </a>
             </li>
           </ul>
         </div>

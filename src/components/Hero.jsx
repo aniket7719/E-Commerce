@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import heroImage from "../assets/hero.jpg";
 import LoginForm from "./LoginForm";
 import RegisterForm from "./RegisterForm";
 import { LogIn, UserPlus } from "lucide-react";
@@ -11,7 +10,7 @@ const Hero = () => {
     <section
       className="text-white"
       style={{
-        backgroundImage: `url(${heroImage})`,
+        backgroundImage: `url("/assets/hero.jpg")`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         height: "90vh",
