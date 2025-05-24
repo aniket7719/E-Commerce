@@ -76,7 +76,7 @@ const Hero = () => {
               </div>
 
               {/* Conditional Form */}
-              {isLogin ? <LoginForm /> : <RegisterForm />}
+              {isLogin ?   <RegisterForm /> : <LoginForm />}
             </div>
           </div>
         </div>
