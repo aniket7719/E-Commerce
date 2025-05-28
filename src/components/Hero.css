@@ -1,0 +1,19 @@
+.hero-section {
+  background-image: url("/assets/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  position: relative;
+}
+
+.hero-title {
+  padding-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    height: auto;
+    padding: 3rem 0;
+    background-position: top;
+  }
+}

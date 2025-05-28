@@ -120,7 +120,7 @@ const Contact = () => {
             >
               <iframe
                 className="rounded"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0192152215776!2d-122.40136032419579!3d37.792872971972864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064db8d9e31%3A0x2e2c5d88a3b5699c!2sSalesforce%20Tower!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.0192152215776!2d74.576782!3d18.150663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c4f9b8e0b4b7%3A0x2e2c5d88a3b5699c!2sBaramati%2C%20Maharashtra%2C%20India!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus"
                 width="100%"
                 height="100%"
                 allowFullScreen=""

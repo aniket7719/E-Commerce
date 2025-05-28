@@ -14,11 +14,11 @@ const HomePage = () => {
     <>
       <Hero />
       <TopPicksCarousel />
-      <FeaturesSection />
       <ProductGrid />
       <MarkdownCarousel />
       <News />
       <HighlightsSection />
+       <FeaturesSection />
       <Contact />
       <Newsletter />
     </>

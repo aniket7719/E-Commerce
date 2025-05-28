@@ -71,24 +71,30 @@ const styles = {
   },
   scrollContainer: {
     display: 'flex',
-    overflowX: 'scroll',
+    flexWrap: 'nowrap',
+    overflowX: 'auto',
     scrollBehavior: 'smooth',
     scrollbarWidth: 'none',
     msOverflowStyle: 'none',
     WebkitOverflowScrolling: 'touch',
+    paddingBottom: '1rem',
   },
   item: {
-    minWidth: '260px',
-    maxWidth: '280px',
-    flex: '0 0 auto',
-    marginRight: '1rem',
-    borderRadius: '20px',
-    overflow: 'hidden',
-    backgroundColor: '#fff',
-    boxShadow: '0 4px 15px rgba(0,0,0,0.1)',
-  },
+  minWidth: '200px',
+  maxWidth: '220px',
+  flex: '0 0 auto',
+  height: '370px',  // Set a fixed height for uniformity
+  marginRight: '1rem',
+  borderRadius: '16px',
+  overflow: 'hidden',
+  backgroundColor: '#fff',
+  boxShadow: '0 3px 10px rgba(0,0,0,0.1)',
+  display: 'flex',
+  flexDirection: 'column',
+},
+
   productImage: {
-    height: '300px',
+    height: '180px',
     objectFit: 'cover',
   },
   rankNumber: {
@@ -96,7 +102,7 @@ const styles = {
     top: '20%',
     left: '0',
     transform: 'translateY(-50%)',
-    fontSize: '7rem',
+    fontSize: '5rem',
     fontWeight: 900,
     color: 'transparent',
     WebkitTextStroke: '1.5px rgba(0,0,0,0.4)',
@@ -132,9 +138,23 @@ const styles = {
 const TopPicksCarousel = () => {
   const scrollRef = useRef(null);
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [visibleCards, setVisibleCards] = useState(4);
   const cardWidth = 280;
-  const visibleCards = 4;
+
   const totalSlides = Math.ceil(topPicks.length / visibleCards);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 576) setVisibleCards(1);
+      else if (window.innerWidth < 768) setVisibleCards(2);
+      else if (window.innerWidth < 992) setVisibleCards(3);
+      else setVisibleCards(4);
+    };
+
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   const scroll = (dir) => {
     scrollRef.current?.scrollBy({
@@ -154,10 +174,10 @@ const TopPicksCarousel = () => {
     const scroller = scrollRef.current;
     scroller?.addEventListener('scroll', updateSlideIndex);
     return () => scroller?.removeEventListener('scroll', updateSlideIndex);
-  }, []);
+  }, [visibleCards]);
 
   return (
-    <section style={styles.section}>
+    <section id="shop" style={styles.section } >
       <Container>
         <h2 className="text-center fw-bold mb-4">TOP 10 PICKS OF THE WEEK</h2>
         <div className="d-flex justify-content-between align-items-center mb-3">
