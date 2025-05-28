@@ -26,9 +26,6 @@ const Hero = () => {
                 <h1 className="display-4 fw-bold mb-3 hero-title">
                   Fall – Winter 2025 Collection
                 </h1>
-                <p className="lead mb-4">
-                  Redefine your style. Step into fashion made for the modern man.
-                </p>
               </div>
               <div className="mt-auto">
                 <button className="btn btn-danger btn-lg px-4 fw-bold">
